@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Coffee Survey</title>
+<aside>
+    <figure>
+        <img src="/images/espresso.jpg" alt="cup of espresso">
+    </figure>
+</aside>
 <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <header>
@@ -21,30 +26,41 @@
 </header>
 <body>
 
-Coffee Survey
+<h1>Coffee Survey</h1>
+<form action="coffee-survey.php" method="post">
 
-Your Name
+<fieldset>
+<legend>Personal Information</legend>
+Your Name<br/>
+<input type="text" name="name" required size="50"/><br/>
+Email Address<br/>
+<input type="email" name="email" required placeholder="enter a valid email" size="50"/><br/>
+</fieldset>
+<fieldset>
+<legend>Your coffee Preferences</legend>
+Tell us your coffee preparation methods.<br/>
+<textarea name="preparation" cols="50" rows="6"></textarea>
+<br/><br/>
+Do you grind your own beans?<br/>
+<input type="radio" name="grind" value="yes"/>Yes<br/>
 
-Email Address
+<input type="radio" name="grind" value="no"/>no<br/>
 
-Tell us your coffee preparation methods.
-
-Do you grind your own beans?
-yes
-no
-
-How do you drink your coffee?
-with sugar
-with cream
-
-What is your favorite coffee drink?
-
-please select a drink
-drip coffee
-french press
-espresso
-latte
-flavored
+How do you drink your coffee?<br/>
+<input type="checkbox" name="drink" value="sugar"/>with sugar<br?>
+<input type="checkbox" name="drink" value="cream"/>with cream<br/>
+<br/>
+What is your favorite coffee drink?<br/>
+<select name="favorite">
+<option value="">please select a drink</option>
+<option value="drip">drip coffee</option>
+<option value="french">french press</option>
+<option value="espresso">espresso</option></option>
+<option value="latte"> latte</option>
+<option value="flavoured">flavored</option></option>
+</select>
+</fieldset>
+</form>
 <footer>
     <nav>
 <ul>
