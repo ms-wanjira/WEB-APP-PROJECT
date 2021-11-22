@@ -92,3 +92,10 @@ td, th{
 table{
     border-collapse: collapse;
 }
+video{
+    margin-bottom: 20px;
+    margin-left:160px;
+    -webkit-filter: grayscale(60%);
+    -moz-filter: grayscale(60%);
+    filter:60%;
+}
